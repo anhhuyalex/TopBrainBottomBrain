@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+body {background-color:#a3d9d3; font-family:Arial, sans-serif; font-size:1.1em;}
+#wrapper {text-align:center;}
+.page {margin:0 auto; text-align:left; background-color:#FFF;}
+
+#pages {margin:0 auto; text-align:left; width:860px; padding:10px; background-color:#FFF;}
+.page {border:3px solid #a3d9d3; padding:10px;}
+#pageOneCopy {padding:15px 15px 15px 350px; background:url(/web/20150916195506im_/http://www.gwaynemiller.com/book_cover_front.png?v=2) top left no-repeat; min-height:450px;}
+#pageTwo {display:none;}
+#pageThree {display:none;}
+#pageThreeCopy {padding:15px 15px 15px 350px; background:url(/web/20150916195506im_/http://www.gwaynemiller.com/book_cover_front.png?v=2) top left no-repeat; min-height:450px;}
+
+h1 {padding:0px; margin:0 0 10px 0; font-size:1.8em;}
+h2 {padding:0px; margin:0 0 5px 0; font-size:1.6em;}
+
+
+.result {display:none; clear:both;}
+p.footer {font-size:13px; padding-bottom:15px;}
+
+.have {padding-bottom:15px;}
+.means {padding-bottom:15px;}
+.progress {text-align:center; text-transform:uppercase; color:#af421b;}
+.error {color:red;font-weight:bold;}
+.clear {clear:both;}
+
+#eMessage {padding:5px; margin-bottom:5px; color:#fff; background:#af421b; text-align:center; }
+
+/* root element for tabs  */
+
+#quiz_tabs {}
+.qHeader {padding:10px 10px 0 10px;}
+.qWrapper {
+	padding:10px;
+	margin-bottom:10px;
+	border-bottom:2px dashed #af421a;	
+}
+
+.buttons {
+	text-align:center;
+	padding:15px 5px;
+}
+ul.tabs {
+	position:relative;
+	float:left;
+    list-style:none;
+    margin:0 auto !important;
+    padding:0;
+	width:800px;
+    height:30px;
+}
+
+/* single tab */
+ul.tabs li {
+    float:left;
+    text-indent:0;
+    padding:0;
+    margin:0 !important;
+    list-style-image:none !important;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+    background: url(/web/20150916195506im_/http://www.gwaynemiller.com/circle.png) no-repeat center center;
+    font-size:12px;
+    display:block;
+    height: 30px;
+    line-height:30px;
+    width: 30px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    padding:5px;
+    margin:0px;
+    position:relative;
+    top:1px;
+}
+
+ul.tabs a:active {
+    outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover, ul.tabs a.answered {
+    background: url(/web/20150916195506im_/http://www.gwaynemiller.com/circle_over.png) no-repeat center center;
+    color:#fff;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+    background: url(/web/20150916195506im_/http://www.gwaynemiller.com/circle_over.png) no-repeat center center;
+    cursor:default !important;
+    color:#fff !important;
+}
+
+.headline {float:left; width:475px; font-size:20px; color: #666;}
+.question {float:left; width:475px; height:75px; font-size:1.2em;}
+.question span {}
+ul.answer, div.answer {
+	float:right;
+	width:325px;
+    list-style:none;
+    margin:0 !important;
+    padding:0;
+}
+ul.answer li {
+	float:left;
+	list-style:none;
+	margin:0 10px;
+	padding:0;
+	font-size:12px;
+	font-weight:normal;
+	width:45px;
+	text-align:center;
+}
+
+
+/* initially all panes are hidden */
+.panes .qWrapper {
+    display:none;
+}
+span.disagree {color: #F00; font-size:12px; text-transform:uppercase;}
+span.agree {color: #090; font-size:12px; text-transform:uppercase;}
+
+.btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:normal;
+	padding:6px 24px;
+	margin:0 15px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.btn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.btn.large {
+	font-size:30px;
+}
+
+button.prev {clear:left; float:left;}
+button.next, button.getResults {clear:right; float:right;}
+
+
+/*
+     FILE ARCHIVED ON 19:55:06 Sep 16, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:09:27 Jan 26, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
